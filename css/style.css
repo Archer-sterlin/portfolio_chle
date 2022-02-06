@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: "Public Sans", poppins, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Ibarra Real Nova", Arial, Helvetica, sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+footer{
+    background-color: var(--text-color);
+    height: 80px;
+    color: white;
+    display: flex;
+
+}
+
+:root{
+    --text-color: #33323D;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left, .footer-right{
+    display: flex;
+    align-items: center;
+}
+.footer-left i, .logo{
+    font-size: 3em;
+    display: inline-block;
+}
+i.fa.fa-caret-down{
+    margin-right: 20px;
+}
+
+footer a{
+    color: white;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+header a, footer a{
+    text-decoration: none;
+    margin: 0 8px;
+}
+header a{
+    color: black;
+}
+
+
+
+.active, footer a:hover, .menu a:hover{
+    color: #5FB4A2;
+}
+
+.hero{
+    min-height: 500px;
+    position: relative;
+}
+.hero-content{
+    position: absolute;
+    bottom: 0;
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero-link{
+    margin-top: 50px;
+    padding: 20px;
+    width: 150px;
+    font-size: 12px;
+    text-align: right;
+    background-color: #203A4C;
+    color: white;
+    position: relative;
+}
+.hero-link span{
+    position: absolute;
+    display: inline-block;
+    background-color: #1D3444;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+
+}
+.card-about-me, .img-card{
+    width: 42%;
+    min-height: 400px ;
+}
+
+.card-about-me{
+    border-top: silver 1px solid;
+    border-bottom: silver 1px solid;
+    padding: 25px 0;
+    line-height: 30px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-about-me p, .portfolio-right p{
+    margin: 30px 0;
+    line-height: 30px;
+}
+.portfolio-right h2{
+    font-weight: normal;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+.portfolio-left{
+    width: 35%;
+    max-height: 500px;
+}
+.portfolio-right{
+    width: 55%;
+    margin: 15px 0;
+}
+.portfolio-right div{
+    margin-bottom: 40px;
+}
+
+.showcase-insure{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.showcase-insure div{
+    margin: 0;
+}
+.showcase-insure div:first-child{
+    margin-top: 35px;
+}
+
+.img-card img {
+    margin: auto;
+    display: block;
+}
+
+.portfolio-link{
+    border: 1px solid var(--text-color);
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--text-color);
+    transition: 0.5s ease all;
+}
+.portfolio-link:hover{
+    background-color: var(--text-color);
+    color: #f2f2f2;
+}
+
+.before-footer{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.before-footer hr{
+    border: none;
+    border-top: 1px solid silver;
+}
+.contact-gaps{
+    padding: 50px 0;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+}
+.contact-gaps div{
+    width: 45%;
+}
+.contact-gaps h1{
+    font-size: 2.5em;
+}
+
+.contact-gaps .socials{
+    margin-top: 20px;
+}
+
+.contact-gaps .socials a{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 3px;
+}
+
+.divider{
+    margin: 50px 0;
+}
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+}
+input, textarea{
+    background-color: #e6e6e6;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    font-family: public sans;
+    resize: none;
+    font-size: 13px;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+input[type='button']{
+    background-color: #203A4C;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+    padding: 15px 30px;
+}
+
+.showcase-1, .showcase-bookmark, .showcase-3{
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    min-height: 500px;
+}
+.showcase-1 img, .showcase-bookmark img{
+    width: 100%;
+}
+.showcase-3 div{
+    width: 40%;
+    position: relative;
+}
+
+.showcase-3{
+    padding: 0;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.porto-rotate{
+    transform: rotate(15deg);
+    width: 100%;
+    position: absolute;
+    right: 90px;
+    top: 200px;
+}
+
+
+.showcase-bookmark{
+    position: relative;
+    overflow: hidden;
+}
+
+.showcase-bookmark div{
+    position: absolute;
+}
+.showcase-bookmark div:first-child{
+    top: 150px;
+    left: 150px;
+    z-index: 10;
+}
+.showcase-bookmark div:last-child{
+    right: 150px;
+}
+
+.showcase-manage img{
+    width: auto;
+}
+
+.showcase-1 div{
+    min-height: 400px;
+    display: flex;
+    width: 30%;
+}
+.showcase-1 div:first-child{
+    margin-top: 200px;
+}
+.showcase-1 div:last-child{
+    display: block;
+}
+
+.showcase-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+.showcase-2 div {
+    width: 24%;
+    margin-bottom: 0;
+}
+
+.showcase-2 div:first-child{
+    display: flex;
+    margin-top: 60px;
+}
+
+.showcase-2 img {
+    width: 100%;
+}
+
+.card-about-me article{
+    color: #5FB4A2;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.portfolio-navigation{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+.navi-left, .navi-right{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    transition: 0.4s ease all;
+}
+
+.navi-left:hover, .navi-right:hover{
+    background-color: #e6e6e6;
+}
+
+.navi-right{
+    justify-content: flex-end;
+    border-left: 1px solid silver;
+}
+
+.portfolio-navigation .fa{
+    padding: 0 25px;
+    color: var(--text-color);
+}
+.portfolio-navigation p{
+    font-size: 11px;
+    color: var(--text-color);
+}
+
+.portfolio-navigation h3{
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: public sans;
+}
+
+
+@media screen and (max-width: 600px) {
+    .contact-gaps{
+        display: block;
+    }   
+    .contact-gaps div{
+        width: 100%;
+    }
+    .contact-gaps h1{
+        margin: 20px 0;
+    }
+}
